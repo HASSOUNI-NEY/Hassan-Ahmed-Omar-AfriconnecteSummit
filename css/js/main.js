@@ -1,4 +1,5 @@
 
+
 // ======================================
 // AfriConnect Summit 2026
 // JavaScript principal
@@ -18,3 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Le site est prêt !");
 });
+// Dark mode simple (base pour commit 3+)
+const toggle = document.getElementById("theme-toggle");
+
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+}
