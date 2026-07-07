@@ -780,8 +780,91 @@ transition:.3s;
 
     background:
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url("pro.jpg");
+    url("../images/pro.jpg");
 
     background-size:cover;
     background-position:center;
+}
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-section{
+
+padding:80px 10%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+
+}
+
+.contact-info{
+
+background:#2563eb;
+color:white;
+padding:40px;
+border-radius:20px;
+
+}
+
+.contact-info h2{
+
+margin-bottom:30px;
+
+}
+
+.contact-info p{
+
+margin:20px 0;
+font-size:18px;
+
+}
+
+.contact-form{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+
+}
+
+.contact-form button{
+
+align-self:flex-start;
+
+}
+@media(max-width:768px){
+
+.contact-section{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.hero-contact{
+    min-height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("../contact.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
